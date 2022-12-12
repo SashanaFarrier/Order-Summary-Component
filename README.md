@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/SashanaFarrier/Order-Summary-Component)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://sashanafarrier.github.io/Order-Summary-Component/)
 
 ## My process
 
