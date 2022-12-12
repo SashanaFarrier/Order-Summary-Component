@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-clr: hsl(245, 75%, 52%);
+  --secondary-clr: hsl(224, 23%, 55%);
+  --clr-100: hsl(0, 0%, 100%);
+  --clr-200: hsl(225, 100%, 98%);
+  --clr-300: hsl(225, 100%, 94%);
+  --clr-400: hsl(223, 47%, 23%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "red hat display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-300);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-weight: 900;
+  color: var(--clr-400);
+  margin: 1.5em 0 0.5em;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.flex-item {
+  display: flex;
+}
+
+.card {
+  text-align: center;
+  max-width: 450px;
+  margin-inline: auto;
+  margin-top: 2em;
+  background-color: var(--clr-100);
+  border-radius: 15px;
+  overflow-x: hidden;
+  box-shadow: 0px 30px 20px -20px var(--secondary-clr);
+}
+
+.card__container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.card__main-text {
+  color: var(--secondary-clr);
+  line-height: 1.7;
+  font-size: 1.25rem;
+  margin: 0 auto;
+}
+
+.card__options {
+  font-size: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3em;
+  padding-block: 2em;
+  background-color: var(--clr-200);
+  border-radius: 10px;
+}
+
+.card__options a {
+  color: var(--primary-clr);
+  font-weight: 700;
+}
+
+.card__options a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.card__annual-plan {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--secondary-clr);
+  margin-left: 1.5em;
+}
+
+.card__annual-plan p:first-child {
+  color: var(--clr-400);
+  font-weight: 900;
+}
+
+.card__buttons {
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 2em 0 1em;
+  margin: 1em 0;
+}
+
+.card__btn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary-clr);
+  padding: 1em 2em;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 0.3ms;
+}
+
+.card__btn--outline {
+  color: var(--clr-200);
+  background-color: var(--primary-clr);
+  box-shadow: 0px 5px 20px 0px var(--secondary-clr);
+}
+
+.card__btn:hover {
+  cursor: pointer;
+}
+
+.card__btn:first-of-type:hover {
+  opacity: 0.7;
+}
+
+.card__btn:last-of-type:hover {
+  color: var(--clr-400);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 2em 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+  }
+
+  .card {
+    margin-top: 2em;
+  }
+}
